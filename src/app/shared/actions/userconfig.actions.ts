@@ -41,9 +41,9 @@ export function getConfigs() {
 
     headers.append('Content-Type', 'application/json');
     headers.append('Accept', 'application/json');
-    headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
+    headers.append('Access-Control-Allow-Origin', '*');
     headers.append('Access-Control-Allow-Credentials', 'true');
-    headers.append('Origin','http://localhost:3000');
+    headers.append('Origin','*');
     dispatch(isLoading(true));
   
     fetch("http://stringblockapi-env.eba-43kfz4tv.us-west-2.elasticbeanstalk.com/config/getall",{ method:"GET", headers:headers})
