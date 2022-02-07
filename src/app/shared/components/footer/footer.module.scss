@@ -1,0 +1,46 @@
+@import './src/assets/styles/fonts';
+@import './src/assets/styles/valiables';
+@import './src/assets/styles/tools';
+
+.footer {
+  margin-top: calc(5% + 10px);
+  bottom: 0;
+  font-family: $font-bold, sans-serif;
+}
+/* Generic styling */
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer {
+  background-color: #555;
+  color: #bbb;
+  line-height: 1.5;
+}
+footer a {
+  text-decoration: none;
+  color: #eee;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer legal */
+.ft-legal {
+  padding: 0.9375rem 1.875rem;
+  background-color: #333;
+}
+.ft-legal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ft-legal-list li {
+  margin: 0.125rem 0.625rem;
+  white-space: nowrap;
+}
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;
+}
