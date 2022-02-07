@@ -46,7 +46,7 @@ export function getConfigs() {
     headers.append('Origin','http://localhost:3000');
     dispatch(isLoading(true));
   
-    fetch(baseURL+":8080/config/getall",{ method:"GET", headers:headers})
+    fetch("http://stringblockapi-env.eba-43kfz4tv.us-west-2.elasticbeanstalk.com/config/getall",{ method:"GET", headers:headers})
     .then(response => {
       console.log(response);
        return response.json()
